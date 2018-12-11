@@ -76,7 +76,6 @@ module BimTools
     attr_reader :structure, :project, :ifBIMc_objects
     
     # creates an IFC model based on given fem structure
-    # (?) could be enhanced to also accept other sketchup objects
     def initialize(structure)
       
       @structure = structure
