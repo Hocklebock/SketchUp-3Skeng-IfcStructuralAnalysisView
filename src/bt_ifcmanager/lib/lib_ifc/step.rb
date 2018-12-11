@@ -46,6 +46,7 @@ module BimTools
           line << ", "
         end
       end
+      test = "##{@ifc_id.to_s} = #{self.class.name.split('::').last.upcase}(#{line})"
       return "##{@ifc_id.to_s} = #{self.class.name.split('::').last.upcase}(#{line})"
     end # step
  end # module Step

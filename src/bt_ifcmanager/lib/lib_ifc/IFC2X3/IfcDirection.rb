@@ -1,6 +1,7 @@
 #  IfcDirection.rb
 #
 #  Copyright 2017 Jan Brouwer <jan@brewsky.nl>
+#  Modified by 3Skeng, Jan Fröhlich
 #
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -20,7 +21,6 @@
 #
 
 require_relative(File.join('..', 'step.rb'))
-require_relative(File.join('..', 'IfcDirection_su.rb'))
 require_relative('IfcGeometricRepresentationItem.rb')
 
 module BimTools
@@ -28,7 +28,6 @@ module BimTools
   class IfcDirection < IfcGeometricRepresentationItem
     attr_accessor :ifc_id, :directionratios
     include Step 
-    include IfcDirection_su
     def initialize( ifc_model, sketchup=nil, *args ) 
       @ifc_id = ifc_model.add( self ) if @ifc_id.nil?
       super

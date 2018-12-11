@@ -59,8 +59,8 @@ module BimTools
           
       step_objects = Array.new
       step_objects << 'HEADER'
-      step_objects << "FILE_DESCRIPTION (('ViewDefinition [CoordinationView]'), '2;1')"
-      step_objects << "FILE_NAME ('', '#{timestamp}', (''), (''), 'IFC-manager for SketchUp (#{VERSION})', '#{originating_system}', '')"
+      step_objects << "FILE_DESCRIPTION (('ViewDefinition [StructuralAnalysisView]'), '2;1')"
+      step_objects << "FILE_NAME ('', '#{timestamp}', (''), (''), '3Skeng Ifc Exporter', '#{originating_system}', '')"
       step_objects << "FILE_SCHEMA (('IFC2X3'))"
       step_objects << 'ENDSEC'
       return step_objects
